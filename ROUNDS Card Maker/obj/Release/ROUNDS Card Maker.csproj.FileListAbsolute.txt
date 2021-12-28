@@ -1,0 +1,33 @@
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Cards\Template.cs
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Properties\Resources.resx
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Properties\Resources.Designer.cs
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\ROUNDS Card Maker.exe.config
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\ROUNDS Card Maker.exe
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\ROUNDS Card Maker.pdb
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\0Harmony.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Assembly-CSharp.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\BepInEx.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\CardChoiceSpawnUniqueCardPatch.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\EvenMoreCards.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\InControl.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\ModdingUtils.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\PhotonRealtime.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\PhotonUnityNetworking.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Siticone.Desktop.UI.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnboundLib.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\Unity.TextMeshPro.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.CoreModule.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.ParticleSystemModule.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.Physics2DModule.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.PhysicsModule.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.UI.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\bin\Release\UnityEngine.UIModule.dll
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.csproj.AssemblyReference.cache
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.exe.config
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS_Card_Maker.Editor.resources
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.csproj.GenerateResource.cache
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.csproj.CoreCompileInputs.cache
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.csproj.CopyComplete
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.exe
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Release\ROUNDS Card Maker.pdb
