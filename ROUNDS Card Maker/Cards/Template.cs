@@ -23,6 +23,9 @@ namespace TemplateModID.Cards
             UnityEngine.Debug.Log($"[{TemplateModID.ModInitials}][Card] {GetTitle()} has been setup.");
             gun.stat = num;
 
+            statModifiers.stat = num;
+
+            block.stat = num;
 
         }
         public override void OnAddCard(Player player, Gun gun, GunAmmo gunAmmo, CharacterData data, HealthHandler health, Gravity gravity, Block block, CharacterStatModifiers characterStats)

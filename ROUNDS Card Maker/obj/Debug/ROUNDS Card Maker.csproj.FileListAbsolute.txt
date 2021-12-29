@@ -30,3 +30,4 @@ K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj
 K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Debug\ROUNDS Card Maker.csproj.CopyComplete
 K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Debug\ROUNDS Card Maker.exe
 K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Debug\ROUNDS Card Maker.pdb
+K:\Student\Documents\GitHub Repositories\ROUNDS Card Maker\ROUNDS Card Maker\obj\Debug\ROUNDS Card Maker.csproj.AssemblyReference.cache

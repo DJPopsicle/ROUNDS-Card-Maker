@@ -26,8 +26,20 @@ namespace ROUNDS_Card_Maker
         String GunStat;
         String GunStatValue;
         String NewGunStats;
-        String StatTemplate = "             sgun.stat = num;";
+        String StatTemplate = "             gun.stat = num;";
         String GunStatOperation;
+        String CharStats;
+        String CharStat;
+        String CharStatValue;
+        String NewCharStats;
+        String CharStatTemplate = "            statModifiers.stat = num;";
+        String CharStatOperation;
+        String BlockStats;
+        String BlockStat;
+        String BlockStatValue;
+        String NewBlockStats;
+        String BlockStatTemplate = "             Block.stat = num;";
+        String BlockStatOperation;
         String DefaultInfoStat =
             "            return new CardInfoStat[] { new CardInfoStat() { positive = true, stat = \"Effect\", amount = \"No\", simepleAmount = CardInfoStat.SimpleAmount.notAssigned } };";
         String NewInfoStat;
@@ -83,18 +95,36 @@ namespace ROUNDS_Card_Maker
             WindowState = FormWindowState.Minimized;
         }
 
+        public void resetTextInputs()
+        {
+            siticoneTextBox11.ResetText();
+            siticoneTextBox12.ResetText();
+            siticoneTextBox8.ResetText();
+            siticoneTextBox6.ResetText();
+            siticoneTextBox7.ResetText();
+            siticoneTextBox5.ResetText();
+            siticoneTextBox13.ResetText();
+            siticoneComboBox1.ResetText();
+            siticoneTextBox17.ResetText();
+            siticoneTextBox16.ResetText();
+            siticoneTextBox15.ResetText();
+            siticoneTextBox19.ResetText();
+        }
+
         private void siticoneButton3_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine(TemplateDir);
             NewCardName = siticoneTextBox4.Text;
             NewCardDir = (AppFileDir + CardFolder + "//" + NewCardName + ".cs");
 
+            
+
             File.Copy(TemplateDir, NewCardDir);
             //File.Move(TemplateDir, NewCardDir);
 
             Card = File.ReadAllText(NewCardDir);
 
-
+            resetTextInputs();
             RefreshCardTextView();
 
         }
@@ -106,7 +136,7 @@ namespace ROUNDS_Card_Maker
 
         private void Editor_Load(object sender, EventArgs e)
         {
-          
+            System.Diagnostics.Debug.WriteLine("the combo box value is" + siticoneComboBox16.Text);
         }
 
         private void siticoneTextBox4_TextChanged(object sender, EventArgs e)
@@ -363,6 +393,18 @@ namespace ROUNDS_Card_Maker
             siticoneTextBox11.Text = GunStats;
         }
 
+        public void RefreshCharStats()
+        {
+            siticoneTextBox17.Text = "";
+            siticoneTextBox17.Text = CharStats;
+        }
+
+        public void RefreshBlockStats()
+        {
+            siticoneTextBox18.Text = "";
+            siticoneTextBox18.Text = BlockStats;
+        }
+
         public void RefreshInfoStats()
         {
             siticoneTextBox12.Text = "";
@@ -396,14 +438,23 @@ namespace ROUNDS_Card_Maker
 
         private void siticoneButton10_Click(object sender, EventArgs e)
         {
-            GunStat = siticoneComboBox1.Text;
+            if (siticoneComboBox12.Text == null || siticoneComboBox11.Text == null || siticoneComboBox12.Text == "none" || siticoneComboBox11.Text == "n/a" || siticoneComboBox12.Text == "" || siticoneComboBox11.Text == "")
+            {
+                GunStat = siticoneComboBox1.Text;
+                GunStatValue = siticoneTextBox8.Text;
+            }
+            else
+            {
+                GunStat = siticoneComboBox12.Text;
+                GunStatValue = siticoneComboBox11.Text.ToLower();
+            }
             GunStatOperation = siticoneComboBox3.Text;
-            GunStatValue = siticoneTextBox8.Text;
             NewGunStats = "            gun." + GunStat + " " + GunStatOperation + " " + GunStatValue + ";";
             GunStats = GunStats + System.Environment.NewLine + NewGunStats;
 
             RefreshCardTextView();
             RefreshGunStats();
+
         }
 
         private void siticoneTextBox9_TextChanged(object sender, EventArgs e)
@@ -543,6 +594,81 @@ namespace ROUNDS_Card_Maker
         }
 
         private void siticoneComboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneTextBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneButton15_Click(object sender, EventArgs e)
+        {
+
+            if (siticoneComboBox9.Text == null || siticoneComboBox10.Text == null || siticoneComboBox9.Text == "none" || siticoneComboBox10.Text == "n/a" || siticoneComboBox9.Text == "" || siticoneComboBox10.Text == "")
+            {
+                CharStat = siticoneComboBox8.Text;
+                CharStatValue = siticoneTextBox16.Text;
+            }
+            else
+            {
+                CharStat = siticoneComboBox9.Text;
+                CharStatValue = siticoneComboBox10.Text.ToLower();
+            }
+            CharStatOperation = siticoneComboBox7.Text;
+            NewCharStats = "            statModifiers." + CharStat + " " + CharStatOperation + " " + CharStatValue + ";";
+            CharStats = CharStats + System.Environment.NewLine + NewCharStats;
+
+            RefreshCardTextView();
+            RefreshCharStats();
+        }
+
+        private void siticoneButton16_Click(object sender, EventArgs e)
+        {
+            CharStatTemplate = "            statModifiers.stat = num;";
+            //GunStats = (GunStats + StatTemplate);
+            System.Diagnostics.Debug.WriteLine(CharStats);
+            Card = Card.Replace(CharStatTemplate, CharStats);
+            CharStatTemplate = CharStats;
+
+            RefreshCardTextView();
+            RefreshCharStats();
+        }
+
+        private void siticoneButton17_Click(object sender, EventArgs e)
+        {
+            if (siticoneComboBox14.Text == null || siticoneComboBox13.Text == null || siticoneComboBox14.Text == "none" || siticoneComboBox13.Text == "n/a" || siticoneComboBox14.Text == "" || siticoneComboBox13.Text == "")
+            {
+                BlockStat = siticoneComboBox16.Text;
+                BlockStatValue = siticoneTextBox19.Text;
+            }
+            else
+            {
+                BlockStat = siticoneComboBox14.Text;
+                BlockStatValue = siticoneComboBox13.Text.ToLower();
+            }
+            BlockStatOperation = siticoneComboBox15.Text;
+            NewBlockStats = "            block." + BlockStat + " " + BlockStatOperation + " " + BlockStatValue + ";";
+            BlockStats = BlockStats + System.Environment.NewLine + NewBlockStats;
+
+            RefreshCardTextView();
+            RefreshBlockStats();
+        }
+
+        private void siticoneButton18_Click(object sender, EventArgs e)
+        {
+            BlockStatTemplate = "            block.stat = num;";
+            //BlockStats = (BlockStats + BlockStatTemplate);
+            System.Diagnostics.Debug.WriteLine(BlockStats);
+            Card = Card.Replace(BlockStatTemplate, BlockStats);
+            BlockStatTemplate = BlockStats;
+
+            RefreshCardTextView();
+            RefreshBlockStats();
+        }
+
+        private void siticoneComboBox8_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
